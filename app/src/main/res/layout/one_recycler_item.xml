@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="?selectableItemBackground"
+    android:layout_marginBottom="10dp">
+<View
+    android:layout_width="20dp"
+    android:id="@+id/priorityid"
+    android:layout_height="20dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/greenshape"
+    android:layout_gravity="end"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/note_one"
+        android:text="note is here"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:ellipsize="end"
+           android:textSize="20sp"
+            android:textColor="#0527E1"
+            android:layout_below="@+id/note_one"
+            android:id="@+id/amount_one"
+            android:text="500"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08 April 2002  03:50"
+            android:textColor="@color/black"
+            android:id="@+id/date_one"
+            android:layout_below="@+id/amount_one"/>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

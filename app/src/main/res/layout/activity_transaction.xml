@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".transaction"
+    tools:ignore="NotSibling">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/llrow"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="New Transaction"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:id="@+id/newtransction_text"
+    android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount_adding"
+        android:layout_below="@+id/newtransction_text"
+        android:background="@drawable/background_transcation"
+        android:padding="15dp"
+        android:hint="Amount "
+        android:singleLine="true"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:maxLength="8"
+        android:textAlignment="textStart"
+        android:layout_margin="15dp"
+        android:inputType="number"
+        android:textStyle="bold"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/note_adding"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/background_transcation"
+    android:textAlignment="textStart"
+    android:hint="Note to Save"
+    android:maxLines="15"
+     android:inputType="textCapSentences"
+    android:maxLength="250"
+    android:gravity="start"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    android:weightSum="2">
+    <CheckBox
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/expense_checkbox"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Expense"/>
+    <CheckBox
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/income_checkbox"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Income"/>
+</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:backgroundTint="#8692f7"
+            android:text="Add To list"
+            android:id="@+id/add_to_list_bt"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"/>
+</LinearLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrow"
+        android:visibility="gone"
+        android:id="@+id/progressbar_transcation_save"/>
+</RelativeLayout>

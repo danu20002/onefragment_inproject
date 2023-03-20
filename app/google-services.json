@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255035798939",
+    "project_id": "expenserfire",
+    "storage_bucket": "expenserfire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255035798939:android:e6f95a11f43fc3eba6dd3e",
+        "android_client_info": {
+          "package_name": "com.example.expenserfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255035798939-j6s156q7edefmh4c951tb2pbfsf8u6e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpWV7d1wy2YfWSGIRAWaz0FQl5_wf-__8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255035798939-j6s156q7edefmh4c951tb2pbfsf8u6e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
